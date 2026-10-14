@@ -233,6 +233,7 @@ class ValkeyProvider(BaseVectorDBProvider):
             kwargs: Dict[str, Any] = {
                 "addresses": addresses,
                 "client_name": "upsonic_vector_store_client",
+                "client_info_tag": "upsonic",
             }
             if self._config.request_timeout is not None:
                 kwargs["request_timeout"] = self._config.request_timeout
